@@ -6,7 +6,7 @@
 #    By: kkhai-ki <kkhai-ki@student.42kl.edu.my>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/02 17:12:39 by kkhai-ki          #+#    #+#              #
-#    Updated: 2024/03/05 14:21:54 by kkhai-ki         ###   ########.fr        #
+#    Updated: 2023/11/17 17:20:53 by kkhai-ki         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,9 +28,7 @@ SRC_FILES =	ft_find_len			\
 			ft_print_ptr		\
 			ft_print_str		\
 			ft_print_unsigned	\
-			ft_printf			\
-			ft_flags			\
-			ft_parse_flags
+			ft_printf
 
 SRC = $(addprefix $(SRC_DIR)/, $(addsuffix .c, $(SRC_FILES)))
 
@@ -57,7 +55,5 @@ clean :
 fclean:		clean
 			rm -rf $(NAME)
 			rm -rf $(LIBFT)
-
-bonus:		all
 
 re:			fclean all
