@@ -6,7 +6,7 @@
 /*   By: kkhai-ki <kkhai-ki@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/02 16:38:57 by kkhai-ki          #+#    #+#             */
-/*   Updated: 2024/03/05 15:17:39 by kkhai-ki         ###   ########.fr       */
+/*   Updated: 2024/03/10 14:13:46 by kkhai-ki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,4 +46,3 @@ int	ft_printf(const char *format, ...)
 	va_end(args);
 	return (len);
 }
-

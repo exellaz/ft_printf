@@ -6,7 +6,7 @@
 /*   By: kkhai-ki <kkhai-ki@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 13:17:07 by kkhai-ki          #+#    #+#             */
-/*   Updated: 2024/03/05 15:10:30 by kkhai-ki         ###   ########.fr       */
+/*   Updated: 2024/03/10 14:13:42 by kkhai-ki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,7 +37,7 @@ int	ft_parsing(const char *str, va_list args)
 	return (len);
 }
 
-int ft_parse_flags(const char *str, int i, t_flags *flags)
+int	ft_parse_flags(const char *str, int i, t_flags *flags)
 {
 	while (str[++i] && ft_isformat(str[i]))
 	{

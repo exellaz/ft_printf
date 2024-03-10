@@ -6,21 +6,21 @@
 /*   By: kkhai-ki <kkhai-ki@student.42kl.edu.my>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 14:36:53 by kkhai-ki          #+#    #+#             */
-/*   Updated: 2024/03/05 15:06:46 by kkhai-ki         ###   ########.fr       */
+/*   Updated: 2024/03/10 14:28:01 by kkhai-ki         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
+// # if defined (__linux__)
+// #  define NULLPTR "(nil)"
+// # elif defined (__APPLE__)
+// #  define NULLPTR "0x0"
+// # endif
+
 # include <stdarg.h>
 # include "libft.h"
-
-# if defined (__linux__)
-#  define NULLPTR "(nil)"
-# elif defined (__APPLE__)
-#  define NULLPTR "0x0"
-# endif
 
 typedef struct s_flags
 {
@@ -39,8 +39,8 @@ int		ft_printf(const char *format, ...);
 int		ft_print_format(va_list args, const char format, t_flags *flags);
 
 //Parsing
-int	ft_parsing(const char *str, va_list args);
-int ft_parse_flags(const char *str, int i, t_flags *flags);
+int		ft_parsing(const char *str, va_list args);
+int		ft_parse_flags(const char *str, int i, t_flags *flags);
 
 //Flags
 t_flags	ft_init_flags(void);
