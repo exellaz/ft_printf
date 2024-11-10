@@ -1,7 +1,7 @@
 # ft_printf
 
 <p align="center">
-	<img src="https://github.com/exellaz/ft_printf/blob/master/ft_printf_badge"/>
+	<img src="https://github.com/exellaz/ft_printf/blob/master/ft_printf_badge.png"/>
 </p>
 
 The goal of this project is to recreate a version of printf from libc that handles certain type conversions. The bonus portion of this project will also require handling some format specifiers aswell.
